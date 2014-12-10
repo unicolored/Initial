@@ -1,0 +1,92 @@
+body #machine #wrap #console {
+  width: 100%;
+  font-family: Courier, monospace;
+  font-size: 24px;
+  color: #d0d2d3;
+  text-shadow: 0px 0px 8px #d0d2d3;
+}
+body #machine #wrap #console li {
+  list-style: inside square;
+  font-size: 16px;
+}
+body #machine #wrap #console b {
+  color: #faa92c;
+  text-shadow: 0px 0px 8px #fbca22;
+}
+abody #machine #wrap #console b:hover {
+  color: #ed9206;
+}
+body #machine #wrap #console b.tp {
+  color: #e23134;
+  font-weight: 400;
+  text-shadow: 0px 0px 8px #e23134;
+}
+abody #machine #wrap #console b.tp:hover {
+  color: #c41c1f;
+}
+body #machine #wrap #console i {
+  color: #68b34a;
+  text-shadow: 0px 0px 8px #38d749;
+}
+abody #machine #wrap #console i:hover {
+  color: #538f3b;
+}
+body #machine #wrap #console u {
+  color: #7a1315;
+  text-shadow: 0px 0px 8px #4f0103;
+}
+abody #machine #wrap #console u:hover {
+  color: #4e0c0d;
+}
+body #machine #wrap #console small {
+  font-size: 12px;
+}
+body #machine #wrap #console span {
+  color: #6e6382;
+  text-shadow: 0px 0px 8px #3f6c94;
+}
+abody #machine #wrap #console span:hover {
+  color: #564d65;
+}
+body #machine #wrap h1,
+body #machine #wrap h2 {
+  text-shadow: 0px 0px 8px #d0d2d3;
+}
+body #machine #wrap input.insert {
+  display: inline-block;
+  width: 3em;
+  background: transparent;
+  color: #fff;
+  border: none;
+  font-family: Courier, monospace;
+  text-shadow: 0px 0px 8px #d0d2d3;
+  float: left;
+  font-size: 18px;
+}
+body #machine #wrap form#command input#consolezone {
+  display: inline-block;
+  width: 80%;
+  background: transparent;
+  color: #fff;
+  border: none;
+  font-family: Courier, monospace;
+  text-shadow: 0px 0px 8px #d0d2d3;
+  float: left;
+  font-size: 18px;
+}
+body #machine #wrap div.cmdline {
+  display: block;
+  clear: both;
+  width: 100%;
+  font-family: Courier, monospace;
+  font-size: 18px;
+  text-shadow: 0px 0px 8px #d0d2d3;
+}
+body #bottom {
+  position: relative;
+  bottom: 0;
+  height: 0px;
+  background: #111111;
+  width: 100%;
+  left: 0;
+}
