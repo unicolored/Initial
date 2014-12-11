@@ -13,8 +13,7 @@ node_modules
 dev/yesimlocal.php
 ssl/
 tmp/
-dev/screenshots/
-htdocs/wp-content/themes/rock-gilleshoarau/dev/
+dist/dev/
 
 ##
 # Operating system files
@@ -30,58 +29,4 @@ Thumbs.db
 .vagrant
 
 ##
-# Wordpress
-htdocs/wc-logs/
-htdocs/wp-admin/
-htdocs/wp-includes/
-htdocs/wp-*.php
-htdocs/xmlrpc.php
-
-htdocs/wp-content/cache/
-!htdocs/wp-content/cache/.htaccess
-htdocs/wp-content/ewww/
-htdocs/wp-content/languages/
-htdocs/wp-content/plugins/
-htdocs/wp-content/upgrade/
-htdocs/wp-content/uploads/
-htdocs/wp-content/wppa-depot/
-htdocs/wp-content/*.php
-
-htdocs/wp-content/themes/*.php
-
 myhost.json
-
-htdocs/index.php
-htdocs/license.txt
-htdocs/*.html
-htdocs/apiservice/
-htdocs/kersley/
-htdocs/le-chat/
-htdocs/rastared/
-htdocs/senzu/
-
-htdocs/.htaccess
-
-##
-# BodyRock
-htdocs/bodyrock-demo/wc-logs/
-htdocs/bodyrock-demo/wp-admin/
-htdocs/bodyrock-demo/wp-includes/
-htdocs/bodyrock-demo/wp-*.php
-htdocs/bodyrock-demo/xmlrpc.php
-
-htdocs/bodyrock-demo/wp-content/cache/
-htdocs/bodyrock-demo/wp-content/languages/
-htdocs/bodyrock-demo/wp-content/plugins/
-htdocs/bodyrock-demo/wp-content/upgrade/
-htdocs/bodyrock-demo/wp-content/uploads/
-htdocs/bodyrock-demo/wp-content/*.php
-
-htdocs/bodyrock-demo/wp-content/themes/*.php
-htdocs/bodyrock-demo/wp-content/themes/tw*
-
-htdocs/bodyrock-demo/index.php
-htdocs/bodyrock-demo/license.txt
-htdocs/bodyrock-demo/*.html
-
-htdocs/bodyrock-demo/.htaccess
