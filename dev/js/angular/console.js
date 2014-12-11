@@ -8,7 +8,7 @@
 ########   ## ##       ######   #######  ##    ##  ######   #######  ######## ########
 */
 totoro.directive( 'console', function() {
-    console.info('console Directive OK');
+    console.info( 'console Directive OK' );
     return {
         restrict: "A",
         //templateUrl: "/wp-content/themes/rock-gilleshoarau/js/navbot/console.html",
