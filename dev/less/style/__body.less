@@ -1,0 +1,186 @@
+/*************************************************************************/
+/* STYLES PERSOS / Intérieur du <body> *********************************************************/
+/*************************************************************************/
+// STYLES DE CADRES / BLOCS ///////////////////////////////////////////////
+#machine #wrap #console {
+	width: 100%;
+	font-family: Courier, monospace;
+	font-size: 24px;
+	color: #d0d2d3;
+	text-shadow: 0px 0px 8px #d0d2d3;
+}
+#machine #wrap #console li {
+	list-style: inside square;
+	font-size: 16px;
+}
+#machine #wrap #console b {
+	color: #faa92c;
+	text-shadow: 0px 0px 8px #fbca22;
+}
+#machine #wrap #console b:hover {
+	color: #ed9206;
+}
+#machine #wrap #console b.tp {
+	color: #e23134;
+	font-weight: 400;
+	text-shadow: 0px 0px 8px #e23134;
+}
+#machine #wrap #console b.tp:hover {
+	color: #c41c1f;
+}
+#machine #wrap #console i {
+	color: #68b34a;
+	text-shadow: 0px 0px 8px #38d749;
+}
+#machine #wrap #console i:hover {
+	color: #538f3b;
+}
+#machine #wrap #console u {
+	color: #7a1315;
+	text-shadow: 0px 0px 8px #4f0103;
+}
+#machine #wrap #console u:hover {
+	color: #4e0c0d;
+}
+#machine #wrap #console small {
+	font-size: 12px;
+}
+#machine #wrap #console span {
+	color: #6e6382;
+	text-shadow: 0px 0px 8px #3f6c94;
+}
+#machine #wrap #console span:hover {
+	color: #564d65;
+}
+#machine #wrap h1,
+#machine #wrap h2 {
+	text-shadow: 0px 0px 8px #d0d2d3;
+}
+#machine #wrap input.insert {
+	display: inline-block;
+	width: 3em;
+	background: transparent;
+	color: #fff;
+	border: none;
+	font-family: Courier, monospace;
+	text-shadow: 0px 0px 8px #d0d2d3;
+	float: left;
+	font-size: 18px;
+}
+#machine #wrap form#command input#consolezone {
+	display: inline-block;
+	width: 80%;
+	background: transparent;
+	color: #fff;
+	border: none;
+	font-family: Courier, monospace;
+	text-shadow: 0px 0px 8px #d0d2d3;
+	float: left;
+	font-size: 18px;
+}
+#machine #wrap div.cmdline {
+	display: block;
+	clear: both;
+	width: 100%;
+	font-family: Courier, monospace;
+	font-size: 18px;
+	text-shadow: 0px 0px 8px #d0d2d3;
+}
+#bottom {
+	position: relative;
+	bottom: 0;
+	height: 0px;
+	background: #111111;
+	width: 100%;
+	left: 0;
+}
+
+
+/*************************************************************************/
+/* MIXINS ****************************************************************/
+/*************************************************************************/
+#top {
+	position:absolute;
+	top:0;
+}
+// STRUCTURE //////////////////////////////////////////////////////////////
+/* Personnalisation de la classe .row de bootstrap */
+.galaxie { .make-row(); }
+
+// Centrer l'élément enfant
+.br_flexcentercenter {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: row; /* works with row or column */
+	flex-direction: row;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+}
+.br_flexbottomleft {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-align-items: flex-end;
+	align-items: flex-end;
+	-webkit-justify-content: flex-end;
+	justify-content: flex-end;
+	-webkit-flex-flow: column wrap;
+	flex-flow: column wrap;
+	-webkit-align-content: stretch;
+	align-content: stretch;
+}
+
+
+//////////////////////
+// Ici je complète les styles .visible-* de bootstrap pour mes deux nouvelles tailles : xl et xxl
+.visible-xl, .visible-xxl {
+	display:none;
+}
+@media (min-width: @screen-xxl) {
+	.visible-lg, .visible-xl {
+		display:none !important;
+	}
+	.visible-xxl {
+		display:block;
+	}
+}
+@media (min-width: @screen-xl) {
+	.visible-lg {
+		display:none !important;
+	}
+	.visible-xl {
+		display:block;
+	}
+}
+/////////////
+
+@media (min-width: @screen-md) {
+	// MARGIN & PADDING ///////////////////////////////////////////////////////
+	@espacement: @cool-height; // Définissez une valeur globale d'espacement
+	/* Ajoute un margin de taille @espacement */
+	.margeit {
+	  margin-top: @espacement;
+	  margin-bottom: @espacement;
+	}
+	.margeit-top { margin-top: @espacement; }
+	.margeit-bottom { margin-bottom: @espacement; }
+
+	/* Ajoute un padding de taille @espacement */
+	.paddit {
+	  padding-top: @espacement;
+	  padding-bottom: @espacement;
+	}
+	.paddit-top { padding-top: @espacement; }
+	.paddit-bottom { padding-bottom: @espacement; }
+}
+
+.truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.shadow-paragraph {
+	text-shadow:-1px -1px 0px @black;
+}
