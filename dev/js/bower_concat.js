@@ -7328,7 +7328,7 @@ if ( typeof jQuery === 'undefined' ) {
                         } catch ( e ) {
                             return a.$broadcast( "LocalStorageModule.notification.error", e.Description ), []
                         }
-                        return c
+                    return c
                 },
                 z = function( b ) {
                     b = b || "";
@@ -7342,7 +7342,7 @@ if ( typeof jQuery === 'undefined' ) {
                         } catch ( g ) {
                             return a.$broadcast( "LocalStorageModule.notification.error", g.message ), E()
                         }
-                        return !0
+                    return !0
                 },
                 A = function() {
                     try {
