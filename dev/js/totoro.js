@@ -1,6 +1,6 @@
 /*!
 totoro */
-var totoro = angular.module( 'totoro', [ 'LocalStorageModule', 'angularFileUpload' ] );
+var totoro = angular.module( 'totoro', [ 'LocalStorageModule' ] );
 /*
 // LocalStorageModule //https://github.com/grevory/angular-local-storage
 An AngularJS module that gives you access to the browsers local storage with cookie fallback
@@ -17,36 +17,9 @@ totoro.config( [ 'localStorageServiceProvider', function( localStorageServicePro
     // Easing jQuery par défaut pour toutes les animations
     $.easing.def = 'easeInOutQuart';
     // EVENEMENTS
-    /*//////////// ANIMATION : navbar */
-    $( '.navbar-collapse' ).on( 'show.bs.collapse', function() {
-        $( ".navbar-collapse" ).css( 'min-height', $( window ).height() ).css( 'height', $( window ).height() ).fadeIn();
-    } ).on( 'hide.bs.collapse', function() {
-        $( ".navbar-collapse" ).fadeOut();
-    } );
     jQuery( "section.resize" ).animate( {
         'min-height': jQuery( window ).height() - jQuery( '#navbartop' ).height()
     }, 1000 );
-    $.localScroll( {
-        filter: '.portfolmanz',
-        duration: 250,
-        offset: -120,
-        axis: 'y',
-        easing: 'easeOutQuint'
-    } );
-    $.localScroll( {
-        filter: '#godown',
-        duration: 1500,
-        offset: -100,
-        axis: 'y',
-        easing: 'easeInOutQuint'
-    } );
-    $.localScroll( {
-        filter: '#gofooter',
-        duration: 1500,
-        offset: 0,
-        axis: 'y',
-        easing: 'easeInOutQuint'
-    } );
 } ] );
 /*
 ##         ## ##      ########  ##     ## ##    ##
@@ -103,6 +76,7 @@ totoro.run( function( $document, $window, localStorageService ) {
 ##         ## ##      ##    ## ##       ##    ##    ## ##    ##  ##    ## ##       ##    ##
 ########   ## ##       ######  ######## ##     ##    ###    ####  ######  ########  ######
 */
+/*
 totoro.factory( 'ApplicationsService', [ '$rootScope', 'localStorageService',
     function( $rootScope, localStorageService ) {
         $rootScope.appList = [ {
@@ -135,6 +109,7 @@ totoro.factory( 'ApplicationsService', [ '$rootScope', 'localStorageService',
             icone: 'console',
             active: false,
             position: 0,
+            iframeurl: 'https://www.gilleshoarau.com/apps/Initial/',
             slogan: '<3'
             }, {
             name: 'mobile',
@@ -153,11 +128,4 @@ totoro.factory( 'ApplicationsService', [ '$rootScope', 'localStorageService',
         localStorageService.set( 'appList' + version, $rootScope.appList );
     }
 ] );
-
-function findWithAttr( array, attr, value ) {
-    for ( var i = 0; i < array.length; i += 1 ) {
-        if ( array[ i ][ attr ] === value ) {
-            return i;
-        }
-    }
-}
+*/

@@ -3,7 +3,7 @@
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="fr-FR" prefix="og: http://ogp.me/ns#"> <![endif]-->
 <!--[if IE 8]>    <html class="no-js lt-ie9" lang="fr-FR" prefix="og: http://ogp.me/ns#"> <![endif]-->
 <!--[if gt IE 8]><!-->
-<html class="no-js" lang="fr-FR" prefix="og: http://ogp.me/ns#" data-ng-app="totoro" manifest="offline.appcache">
+<html class="no-js" lang="fr-FR" prefix="og: http://ogp.me/ns#" data-ng-app="totoro">
 <!--<![endif]-->
 
 <head prefix="gilles: https://www.gilleshoarau.com/apps/Initial/">
@@ -33,36 +33,20 @@
     <![endif]-->
 </head>
 
-<body class="home page page-id-5830 page-template-default rock">
+<body>
   <div id="top"></div>
-  <section style="height: 1075px;" class="window resizeApp myApp-terminal">
-    <div style="min-height: 775px; padding: 80px;" id="machine">
+  <section class="window resizeApp myApp-terminal" data-ng:controller="ConsoleCtrl">
+    <div id="machine">
       <div id="wrap">
-        <div id="console">* * *
-          <br><i></i> Netscape (Mozilla, Win32 fr - Gecko)
-          <br><i></i> GillesHoarau<b class="tp">.com</b> <small>v.1.7.3</small>
-          <br>
-          <h2>&laquo; Bon après-midi &raquo;</h2>
-          <li>Afficher le bureau, tapez : <b>start</b>
-          </li>
-          <li>Liste de commandes : <b>list</b>
-          </li>
-          <li>Besoin d'aide ? <span>contact@gilleshoarau.com</span>
-          </li>
-          <br> * * *</div>
-        <input class="insert">
-        <form id="command" action="/">
-          <input id="consolezone">
-          <input class="hidden" type="submit">
-        </form>
+        <div id="console"></div>
       </div>
     </div>
     <div id="bottom"></div>
   </section>
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <script type="text/javascript" src="https://www.gilleshoarau.com/wp-content/themes/rock-gilleshoarau/dev/js/tmp/bower_concat.js"></script>
-  <script type="text/javascript" src="https://www.gilleshoarau.com/wp-content/themes/rock-gilleshoarau/dev/js/totoro.js"></script>
-  <script type="text/javascript" src="https://www.gilleshoarau.com/wp-content/themes/rock-gilleshoarau/dev/js/angular/console.js"></script>
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="dev/js/bower_concat.js"></script>
+  <script type="text/javascript" src="dev/js/totoro.js"></script>
+  <script type="text/javascript" src="dev/js/angular/console.js"></script>
 
 </body>
 
