@@ -8,6 +8,7 @@
 ########   ## ##       ######   #######  ##    ##  ######   #######  ######## ########
 */
 totoro.directive( 'console', function() {
+    console.info( 'console Directive OK' );
     return {
         restrict: "A",
         //templateUrl: "/wp-content/themes/rock-gilleshoarau/js/navbot/console.html",
@@ -84,7 +85,8 @@ totoro.factory( "ConsoleDatas", function() {
     if ( navigator.onLine === true ) {
         Ins.connected = '<i>☼</i> ';
     }
-    Ins.aide = '<li>Besoin d\'aide ? <span>contact@gilleshoarau.com</span></li>';
+    //Ins.aide = '<li>Besoin d\'aide ? <span>contact@gilleshoarau.com</span></li>';
+    Ins.aide = '';
     Ins.strings = "";
     Ins.corrections = "";
     Ins.suffix = false;
@@ -343,9 +345,9 @@ totoro.factory( "ConsoleService", [ 'ConsoleSubmitService', 'ConsoleDatas', 'Con
             theContainer.html( datas.machine.animate( {
                 padding: '80px',
             } ) ).append( datas.pageBottom );
-            setInterval( function() {
+            /*setInterval( function() {
                 datas.pageBottom.scrollTo();
-            }, 500 );
+            }, 500 );*/
             /*
             db                 .d8b.  d88888b d88888b d888888b  .o88b. db   db  .d8b.   d888b  d88888b
             88       db db    d8' `8b 88'     88'       `88'   d8P  Y8 88   88 d8' `8b 88' Y8b 88'
@@ -361,8 +363,10 @@ totoro.factory( "ConsoleService", [ 'ConsoleSubmitService', 'ConsoleDatas', 'Con
                 event.preventDefault();
             } );
             var instructions = datas.Ins;
+            // TODO: rendre la version dynamique
+            var version = "0.0.1";
             datas.ghConsole.typed( {
-                strings: [ '* * * ^500 <br>' + instructions.connected + navigator.appName + ' (' + navigator.appCodeName + ', ' + navigator.platform + ' ' + navigator.language + ' - ' + navigator.product + ')<br><i>☺</i> GillesHoarau<b class="tp">.com</b> <small>v.' + version + '</small><br>' + instructions.signature + instructions.instructions + instructions.liste + instructions.aide + instructions.space ],
+                strings: [ '* * * ^500 <br>' + instructions.connected + navigator.appName + ' (' + navigator.appCodeName + ', ' + navigator.platform + ' ' + navigator.language + ' - ' + navigator.product + ')<br><i>☺</i> <b>I</b>nitia<b>l</b> <small>v.' + version + '</small><br>' + instructions.signature + instructions.instructions + instructions.liste + instructions.aide + instructions.space ],
                 //strings: [ ' . . . ^100*^100*^100*', '<br> . . . ' + new Date() + '<br> . . . * * * ^500 <br>' + instructions.connected + navigator.appName + ' (' + navigator.appCodeName + ', ' + navigator.platform + ' ' + navigator.language + ' - ' + navigator.product + ')<br><i>☺</i> GillesHoarau<b class="tp">.com</b> <small>v.' + version + '</small><br>' + instructions.signature + instructions.instructions + instructions.liste + instructions.aide + instructions.space ],
                 //strings: [ 'Ok' ],
                 typeSpeed: 0,
@@ -374,7 +378,7 @@ totoro.factory( "ConsoleService", [ 'ConsoleSubmitService', 'ConsoleDatas', 'Con
                 cursorChar: '█',
                 callback: function() {
                     datas.commandForm.html( datas.consoleZone ).append( datas.submitBtn );
-                    datas.insert.val( 'GH $ ' );
+                    datas.insert.val( 'Il $ ' );
                     datas.consoleZone.val( '' );
                     datas.consoleZone.focus();
                 }

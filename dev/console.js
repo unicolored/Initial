@@ -24,9 +24,7 @@ totoro.directive( 'console', function() {
 ########   ## ##       ######   #######  ##    ##    ##    ##     ##  #######  ######## ######## ######## ##     ##
 */
 totoro.controller( 'ConsoleCtrl', [ '$scope', 'ConsoleService', function( $scope, ConsoleService ) {
-    console.log( 'HOLALA' );
     ConsoleService.consoleStart();
-    console.log( 'hey' );
 } ] );
 totoro.factory( "ConsoleDatas", function() {
     /*

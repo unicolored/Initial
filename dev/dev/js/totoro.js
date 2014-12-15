@@ -31,7 +31,7 @@ totoro.config( [ 'localStorageServiceProvider', function( localStorageServicePro
 ########   ## ##      ##     ##  #######  ##    ##
 */
 // RUN
-totoro.run( ['$document', '$window', 'localStorageService', function( $document, $window, localStorageService ) {
+totoro.run( function( $document, $window, localStorageService ) {
     // Enregistrement de la taille du viewport en local
     localStorageService.set( 'windowWidth', $document[ 0 ].body.clientWidth );
     localStorageService.set( 'windowHeight', $window.innerHeight );
@@ -66,7 +66,7 @@ totoro.run( ['$document', '$window', 'localStorageService', function( $document,
             'min-height': $window.innerHeight - $( '#navbartop' ).height()
         }, 1000 );
     }
-}] );
+} );
 /*
 ##         ## ##       ######  ######## ########  ##     ## ####  ######  ########  ######
 ##         ## ##      ##    ## ##       ##     ## ##     ##  ##  ##    ## ##       ##    ##
