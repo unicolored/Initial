@@ -1,4 +1,4 @@
 Initial
 =======
 
-Fabulous Terminal for Websites
+Fabulous Terminal for Webmasters
