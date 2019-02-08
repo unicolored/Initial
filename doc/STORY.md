@@ -1,4 +1,4 @@
-Hi, welcome to Initial. I'm Gilles Hoarau and i want to make the Web a better place. You too ? Well, you'll love Initial. Join the project as a user or a contributor, but certainly as a webMaster. You are now an Inimaster, et voilà :)
+Hi, welcome to Initial. I'm Gilles Hoarau and i want to make the Web a better place. You too ? Well, you'll love Initial. Join the project as a user or a contributor, but certainly as a webMaster. You are now an Inimaster, et voilï¿½ :)
 You'll find the project on github. The main site, for iniMasters only, is here. The bookmarklet instructions are below.
 
 The idea is simple : connect your website with Initial, to the iniMasters community and show-off your work. Share ideas and much about the World Wide Web between verified webmasters only.
