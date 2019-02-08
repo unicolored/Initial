@@ -468,13 +468,13 @@ module.exports = function( grunt ) {
         // SERVEUR : configuration de connect
         connect: {
             options: { // Port 8000 par défaut
-                protocol: 'https',
+                protocol: 'http',
                 port: 9000,
-                hostname: 'gilleshoarau.com',
+                hostname: '127.0.0.1',
                 livereload: 35729,
                 base: '',
-                key: grunt.file.read( 'ssl/monserveur.key' ).toString(),
-                cert: grunt.file.read( 'ssl/certificate-96884.crt' ).toString()
+                // key: grunt.file.read( 'ssl/monserveur.key' ).toString(),
+                // cert: grunt.file.read( 'ssl/certificate-96884.crt' ).toString()
             },
             livereload: {
                 options: {
@@ -482,8 +482,8 @@ module.exports = function( grunt ) {
                     //open:true,
                     //protocol: 'https',
                     base: '<%= gh.dist %>',
-                    key: grunt.file.read( 'ssl/monserveur.key' ),
-                    cert: grunt.file.read( 'ssl/certificate-96884.crt' )
+                    // key: grunt.file.read( 'ssl/monserveur.key' ),
+                    // cert: grunt.file.read( 'ssl/certificate-96884.crt' )
                 }
             },
             test: {
