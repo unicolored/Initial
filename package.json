@@ -5,7 +5,6 @@
   "homepage": "https://www.gilleshoarau.com/apps/Initial/",
   "keywords": "fabulous, terminal, website",
   "main": "Gruntfile.js",
-
   "scripts": {
     "test": "grunt test"
   },
