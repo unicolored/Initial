@@ -2,6 +2,7 @@
 // 'test/spec/{,*/}*.js'
 // recursively match all subfolders:
 // 'test/spec/**/*.js'
+
 module.exports = function( grunt ) {
     'use strict';
     // Module qui affiche le temps d'éxécution de chaque tâche.
