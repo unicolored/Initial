@@ -1,6 +1,7 @@
 {
-  "name": "initial",
+  "name": "shil",
   "version": "0.1.0",
+  "repository": "git@github.com:unicolored/Initial.git",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -9,7 +10,6 @@
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
-  "private": true,
   "dependencies": {
     "@angular/animations": "^6.1.0",
     "@angular/common": "^6.1.0",
